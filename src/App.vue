@@ -1,28 +1,27 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+<div id="app" class="grid container">
+  <div class="sub_category_page">
+    <div class="column_right column_right_products_container">
+      <div class="product_area">
+        <productSection />
+      </div>
+    </div>
   </div>
+</div>
+
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
+import productSection from "./components/products_section.vue"
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    productSection
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
